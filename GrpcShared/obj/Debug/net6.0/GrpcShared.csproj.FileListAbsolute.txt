@@ -1,0 +1,12 @@
+D:\PersonalProjects\grpc\GrpcShared\bin\Debug\net6.0\GrpcShared.deps.json
+D:\PersonalProjects\grpc\GrpcShared\bin\Debug\net6.0\GrpcShared.dll
+D:\PersonalProjects\grpc\GrpcShared\bin\Debug\net6.0\ref\GrpcShared.dll
+D:\PersonalProjects\grpc\GrpcShared\bin\Debug\net6.0\GrpcShared.pdb
+D:\PersonalProjects\grpc\GrpcShared\obj\Debug\net6.0\GrpcShared.csproj.AssemblyReference.cache
+D:\PersonalProjects\grpc\GrpcShared\obj\Debug\net6.0\GrpcShared.GeneratedMSBuildEditorConfig.editorconfig
+D:\PersonalProjects\grpc\GrpcShared\obj\Debug\net6.0\GrpcShared.AssemblyInfoInputs.cache
+D:\PersonalProjects\grpc\GrpcShared\obj\Debug\net6.0\GrpcShared.AssemblyInfo.cs
+D:\PersonalProjects\grpc\GrpcShared\obj\Debug\net6.0\GrpcShared.csproj.CoreCompileInputs.cache
+D:\PersonalProjects\grpc\GrpcShared\obj\Debug\net6.0\GrpcShared.dll
+D:\PersonalProjects\grpc\GrpcShared\obj\Debug\net6.0\ref\GrpcShared.dll
+D:\PersonalProjects\grpc\GrpcShared\obj\Debug\net6.0\GrpcShared.pdb

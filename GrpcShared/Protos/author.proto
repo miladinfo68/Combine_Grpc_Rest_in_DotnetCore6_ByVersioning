@@ -1,0 +1,85 @@
+syntax = "proto3";
+
+//import "google/protobuf/empty.proto";  
+//import "google/protobuf/Timestamp.proto";
+
+option csharp_namespace= "GrpcShared";
+
+package protos.author;
+
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+
+
+service AuthorProtoService {
+    rpc GetAll (GetAllAuthorsRequest) returns (GetAllAuthorsResponse){}
+    rpc GetById (GetAuthorRequest) returns (GetAuthorResponse){}
+    rpc Add (AddAuthorRequest) returns (AddAuthorResponse){}
+    rpc Update (EditAuthorRequest) returns (EditAuthorResponse){}
+    rpc Delete (DeleteAuthorRequest) returns (DeleteAuthorResponse){}
+}
+
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+message GetAllAuthorsRequest {}
+
+message  AuthorModel {
+    string id =1 ;
+    string name =2 ;
+}
+
+//------------------------------
+
+message  GetAllAuthorsResponse {
+    repeated AuthorModel authors=1;
+}
+
+//------------------------------
+message  GetAuthorRequest {
+    string id =1 ;
+}
+
+message  GetAuthorResponse {
+    AuthorModel author = 1;
+}
+
+//------------------------------
+message  AddAuthorRequest {
+    string name =1 ;
+}
+
+message  AddAuthorResponse {
+    string id =1 ;
+}
+
+//------------------------------
+message  EditAuthorRequest {
+    string id =1 ;
+    string name =2 ;
+}
+
+message  EditAuthorResponse {
+   AuthorModel author = 1;
+}
+
+//------------------------------
+
+message  DeleteAuthorRequest {
+    string id =1 ;
+}
+
+message  DeleteAuthorResponse {
+    bool result =1 ;
+}
+
+
+
+
+// Task<IReadOnlyCollection<Q>> GetAll();
+//     Task<Q> GetById(string id);
+//     Task<string> Add(Y entity);
+//     Task<bool> Update(Z entity);
+//     Task<bool> Delete(string id);

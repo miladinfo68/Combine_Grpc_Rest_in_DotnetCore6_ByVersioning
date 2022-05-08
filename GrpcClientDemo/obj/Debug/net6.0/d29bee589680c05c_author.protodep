@@ -1,0 +1,2 @@
+obj\Debug\net6.0/Author.cs \
+obj\Debug\net6.0/AuthorGrpc.cs: ../GrpcShared/Protos/author.proto

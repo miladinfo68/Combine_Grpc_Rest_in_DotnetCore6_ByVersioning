@@ -1,0 +1,61 @@
+https://medium.com/mongo-db-with-netcore/repository-pattern-with-mongodb-net-driver-and-net-core-webapi-9b31c368d81c
+https://qappdesign.com/code/using-mongodb-with-net-core-webapi/
+
+
+https://matheus.ro/2018/03/05/getting-started-mongodb-using-asp-net-core-2-web-api/
+https://matheus.ro/2018/03/05/getting-started-mongodb-using-asp-net-core-2-web-api/
+
+https://medium.com/@marekzyla95/mongo-repository-pattern-700986454a0e
+
+https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mongo-app?view=aspnetcore-6.0&tabs=visual-studio
+
+
+
+https://www.geeksforgeeks.org/create-user-and-add-role-in-mongodb/
+
+db.createUser(
+{
+    user: "testuser",
+    pwd:  "1234",
+    roles:[{role: "userAdmin" , db:"BookDb"}]
+})
+
+https://stackoverflow.com/questions/44513786/error-on-mongodb-authentication
+
+
+Grrrrrrrrrrrrrrreat
+https://code-maze.com/getting-started-aspnetcore-mongodb/
+https://code-maze.com/grpc-aspnet-mongodb/
+
+
+
+https://github.com/ikyriak/TutorialWebApiVersioning
+https://codewithmukesh.com/blog/api-versioning-in-aspnet-core-3-1/
+https://www.dotnetnakama.com/blog/all-about-web-api-versioning-in-asp-dotnet-core/
+https://www.telerik.com/blogs/your-guide-rest-api-versioning-aspnet-core
+https://www.puresourcecode.com/dotnet/net-core/creating-net-core-api-with-versioning/
+
+
+migrate from .net core 5 to 6
+https://gist.github.com/davidfowl/0e0372c3c1d895c3ce195ba983b1e03d
+
+
+middlware
+https://dev.to/moe23/middleware-in-asp-net-core-4408
+https://www.tutorialsteacher.com/core/how-to-add-custom-middleware-aspnet-core
+https://code-maze.com/working-with-asp-net-core-middleware/
+
+
+
+grpc methods
+
+https://docs.microsoft.com/en-us/aspnet/core/grpc/services?view=aspnetcore-6.0
+
+https://www.yogihosting.com/grpc-aspnet-core/
+https://docs.microsoft.com/en-us/aspnet/core/grpc/client?view=aspnetcore-6.0
+https://www.roundthecode.com/dotnet/use-asp-net-core-hosted-services-run-background-task
+https://blog.jetbrains.com/dotnet/2021/07/19/getting-started-with-asp-net-core-and-grpc/
+https://anthonygiretti.com/2021/01/13/grpc-asp-net-core-5-test-grpc-endpoints-with-grpcurl/
+
+
+

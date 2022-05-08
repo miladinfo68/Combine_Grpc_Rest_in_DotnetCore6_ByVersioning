@@ -1,0 +1,117 @@
+syntax = "proto3";
+
+//import "google/protobuf/empty.proto";  
+//import "google/protobuf/Timestamp.proto";
+
+option csharp_namespace= "GrpcShared";
+
+package protos.book;
+
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+
+
+service BookProtoService {
+    rpc GetAll (GetAllBooksRequest) returns (GetAllBooksResponse){}
+    rpc GetById (GetBookRequest) returns (GetBookResponse){}
+    rpc Add (AddBookRequest) returns (AddBookResponse){}
+    rpc Update (EditBookRequest) returns (EditBookResponse){}
+    rpc Delete (DeleteBookRequest) returns (DeleteBookResponse){}
+}
+
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+message GetAllBooksRequest {}
+
+message  BookModel {
+    string id =1 ;
+    string name =2 ;
+    string subject =3 ;
+    string isbn =4 ;
+    string genre =5 ;
+    string description =6 ;
+    string authorId =7 ;
+    //AuthorMiniModel author=7;
+}
+
+message  BookModelDisplay {
+    string id =1 ;
+    string name =2 ;
+    string subject =3 ;
+    string isbn =4 ;
+    string genre =5 ;
+    string description =6 ;
+    //string authorId =7 ;
+    AuthorMiniModel author=7;
+}
+
+message AuthorMiniModel{
+    string id =1 ;
+    string name =2 ;
+}
+
+//------------------------------
+
+message  GetAllBooksResponse {
+    repeated BookModelDisplay Books=1;
+}
+
+//------------------------------
+message  GetBookRequest {
+    string id =1 ;
+}
+
+message  GetBookResponse {
+    BookModelDisplay Book = 1;
+}
+
+//------------------------------
+message  AddBookRequest {
+    string name =1 ;
+    string subject =2 ;
+    string isbn =3;
+    string genre =4 ;
+    string description =5 ;
+    string authorId =6 ;
+}
+
+message  AddBookResponse {
+    BookModel Book=1;
+}
+
+//------------------------------
+message  EditBookRequest {
+    string id =1 ;
+    string name =2 ;
+    string subject =3 ;
+    string isbn =4;
+    string genre =5 ;
+    string description =6 ;
+    string authorId =7 ;
+}
+
+message  EditBookResponse {
+   BookModel Book = 1;
+}
+
+//------------------------------
+
+message  DeleteBookRequest {
+    string id =1 ;
+}
+
+message  DeleteBookResponse {
+    bool result =1 ;
+}
+
+
+
+
+// Task<IReadOnlyCollection<Q>> GetAll();
+//     Task<Q> GetById(string id);
+//     Task<string> Add(Y entity);
+//     Task<bool> Update(Z entity);
+//     Task<bool> Delete(string id);
